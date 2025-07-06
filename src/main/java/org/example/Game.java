@@ -20,4 +20,13 @@ public class Game {
     public char getCurrentPlayer() {
         return currentPlayer;
     }
+    public void printBoard() {
+        for (char[] row : board) {
+            for (char cell : row) {
+                System.out.print("[" + cell + "]");
+            }
+            System.out.println();
+        }
+    }
+
 }
