@@ -43,7 +43,7 @@ public class Game {
         return ' '; // Kein Gewinner
     }
     public boolean isFull() {
-        for (char[] row : board) {
+        for (char[] row : board) { // test
             for (char cell : row) {
                 if (cell == ' ') return false;
             }
