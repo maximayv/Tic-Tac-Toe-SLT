@@ -5,13 +5,7 @@ public class Game {
     private char currentPlayer = 'X';
 
     public Game() {
-        resetBoard();
-    }
 
-    public void resetBoard() {
-        for (int i = 0; i < 3; i++)
-            for (int j = 0; j < 3; j++)
-                board[i][j] = ' ';
     }
 
     public boolean makeMove(int row, int col) {
@@ -21,15 +15,6 @@ public class Game {
             return true;
         }
         return false;
-    }
-
-    public void printBoard() {
-        for (char[] row : board) {
-            for (char cell : row) {
-                System.out.print("[" + cell + "]");
-            }
-            System.out.println();
-        }
     }
 
     public char getCurrentPlayer() {
